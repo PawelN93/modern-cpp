@@ -13,7 +13,7 @@ using namespace std;
 typedef vector<shared_ptr<Shape>> Collection;
 
 bool sortByArea(shared_ptr<Shape> first, shared_ptr<Shape> second) {
-    if (first == NULL || second == NULL)
+    if (first == nullptr || second == nullptr)
         return false;
     return (first->getArea() < second->getArea());
 }
