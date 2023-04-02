@@ -46,7 +46,7 @@ void findFirstShapeMatchingPredicate(const Collection& collection,
                                      bool (*predicate)(shared_ptr<Shape> s),
                                      std::string info) {
     Collection::const_iterator iter = std::find_if(collection.begin(), collection.end(), predicate);
-    if (*iter != 0) {
+    if (*iter != nullptr) {
         cout << "First shape matching predicate: " << info << endl;
         (*iter)->print();
     } else {
