@@ -1,5 +1,7 @@
 #pragma once
 
+//test commit
+
 enum class Color : unsigned char{
     White = 0,
     Red,
